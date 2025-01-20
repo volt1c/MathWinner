@@ -190,5 +190,18 @@ namespace MathWinner.Tests.Matrix
 
             Assert.Equal(input, result);
         }
+
+        [Fact]
+        public void FromNumber_ShouldCreateMatrixWithSingleElement()
+        {
+            int value = 42;
+
+            var matrix = Matrix<int>.FromNumber(value);
+
+            Assert.NotNull(matrix);
+            Assert.Equal(1, matrix.N);
+            Assert.Equal(1, matrix.M);
+            Assert.Equal(value, matrix.Get(0, 0));
+        }
     }
 }

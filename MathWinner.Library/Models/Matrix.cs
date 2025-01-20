@@ -39,6 +39,7 @@ namespace MathWinner.Library.Models
         public bool CanBeDevided(Matrix<T> other) { throw new NotImplementedException(); }
 
         public static Matrix<T> Identity(int n) { throw new NotImplementedException(); }
+        public static Matrix<T> FromNumber(T value) { throw new NotImplementedException(); }
 
         public T[][] ToArray() { throw new NotImplementedException(); }
         public List<List<T>> ToList() { throw new NotImplementedException(); }
