@@ -132,8 +132,7 @@ namespace MathWinner.Library.Models
 
         public bool CanBeSubtracted(int n, int m) => CanBeAdded(n, m);
 
-        // TODO: Może się nie przydać, bo macierze się ze sobą nie dzielą
-        public bool CanBeDivided(Matrix<T> other) { throw new NotImplementedException(); }
+        public bool is1x1() => N == 1 && M == 1;
 
         public static Matrix<T> Identity(int n)
         {
