@@ -27,11 +27,14 @@ namespace MathWinner.Tests.Matrix
         {
             var builder = new MatrixBuilder<int>(2, 3);
 
+            builder.AddRow(1, 2, 3);
+            builder.AddRow(4, 5, 6);
+
             var matrix = builder.Matrix;
             Assert.Equal(2, matrix.N);
             Assert.Equal(3, matrix.M);
 
-            Assert.Equal(0, matrix.Get(0, 0));
+            Assert.Equal(1, matrix.Get(0, 0));
         }
 
         [Fact]
