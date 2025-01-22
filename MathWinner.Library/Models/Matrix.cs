@@ -132,7 +132,7 @@ namespace MathWinner.Library.Models
 
         public bool CanBeSubtracted(int n, int m) => CanBeAdded(n, m);
 
-        public bool is1x1() => N == 1 && M == 1;
+        public bool Is1x1() => N == 1 && M == 1;
 
         public static Matrix<T> Identity(int n)
         {
