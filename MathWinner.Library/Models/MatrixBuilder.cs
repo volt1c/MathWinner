@@ -28,6 +28,16 @@ namespace MathWinner.Library.Models
             }
             _n = n;
             _m = m;
+
+            for (int i = 0; i < _n; i++)
+            {
+                List<T> row = new List<T>();
+                for (int j = 0; j < _m; j++)
+                {
+                    row.Add(item: default);
+                }
+                _rows.Add(row);
+            }
         }
 
         public MatrixBuilder<T> SetN(int n) 
