@@ -3,9 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35027.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathWinner.Tests", "MathWinner.Tests\MathWinner.Tests.csproj", "{010F121F-613A-46CC-A4EE-B71C4CD46094}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MathWinner.Tests", "MathWinner.Tests\MathWinner.Tests.csproj", "{010F121F-613A-46CC-A4EE-B71C4CD46094}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathWinner.Library", "MathWinner.Library\MathWinner.Library.csproj", "{CAA1371A-FCC8-4393-A12A-5795B44135EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MathWinner.Library", "MathWinner.Library\MathWinner.Library.csproj", "{CAA1371A-FCC8-4393-A12A-5795B44135EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageTransformator", "ImageTransformator\ImageTransformator.csproj", "{E7C6E115-D12A-4C01-94E5-94E1732ABF25}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Systems", "Systems\Systems.csproj", "{72BBCD91-BB42-48FC-BB3C-4B969F85CB9D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompleteMatrix", "CompleteMatrix\CompleteMatrix.csproj", "{00F8247B-6AE7-41A9-8DC0-BF25D4029771}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +27,18 @@ Global
 		{CAA1371A-FCC8-4393-A12A-5795B44135EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CAA1371A-FCC8-4393-A12A-5795B44135EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CAA1371A-FCC8-4393-A12A-5795B44135EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7C6E115-D12A-4C01-94E5-94E1732ABF25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7C6E115-D12A-4C01-94E5-94E1732ABF25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7C6E115-D12A-4C01-94E5-94E1732ABF25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7C6E115-D12A-4C01-94E5-94E1732ABF25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72BBCD91-BB42-48FC-BB3C-4B969F85CB9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72BBCD91-BB42-48FC-BB3C-4B969F85CB9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72BBCD91-BB42-48FC-BB3C-4B969F85CB9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72BBCD91-BB42-48FC-BB3C-4B969F85CB9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00F8247B-6AE7-41A9-8DC0-BF25D4029771}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00F8247B-6AE7-41A9-8DC0-BF25D4029771}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00F8247B-6AE7-41A9-8DC0-BF25D4029771}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00F8247B-6AE7-41A9-8DC0-BF25D4029771}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
