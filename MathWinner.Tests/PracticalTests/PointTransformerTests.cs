@@ -27,15 +27,14 @@ namespace MathWinner.Tests.PracticalTests
         [Fact]
         public void TestTransformations_2()
         {
-            PointTransformer point = new PointTransformer(-6, 7);
+            PointTransformer point = new PointTransformer(-9, -7);
 
-            point.ReflectOverLineXEquals(9);
-            point.Rotate(72);
-            point.ReflectOverOrigin();
-            point.Translate(1, MathF.Exp(MathF.PI));
+            point.Rotate(296);
+            point.Translate(7, 9);
+            point.ReflectOverLineXEquals(0);
 
             double floorX = Math.Floor(point.Position.X * 100) / 100;
-            Assert.Equal(0.24, floorX);
+            Assert.Equal(3.23, floorX);
         }
     }
 

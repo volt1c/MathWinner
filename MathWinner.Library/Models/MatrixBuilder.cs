@@ -20,7 +20,7 @@ namespace MathWinner.Library.Models
             _rows.Add(new List<T> { T.Zero });
         }
 
-        public MatrixBuilder(int n, int m) 
+        public MatrixBuilder(int n, int m, bool prerender = true) 
         { 
             if (n < 1 || m < 1)
             {
@@ -29,15 +29,16 @@ namespace MathWinner.Library.Models
             _n = n;
             _m = m;
 
-            for (int i = 0; i < _n; i++)
-            {
-                List<T> row = new List<T>();
-                for (int j = 0; j < _m; j++)
+            if(prerender)
+                for (int i = 0; i < _n; i++)
                 {
-                    row.Add(item: default);
+                    List<T> row = new List<T>();
+                    for (int j = 0; j < _m; j++)
+                    {
+                        row.Add(item: default);
+                    }
+                    _rows.Add(row);
                 }
-                _rows.Add(row);
-            }
         }
 
         public MatrixBuilder<T> SetN(int n) 
